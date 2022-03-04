@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shorteners",
+  "info": {
+    "singularName": "shortener",
+    "pluralName": "shorteners",
+    "displayName": "shortener"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "alias": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "visit": {
+      "type": "integer"
+    },
+    "user": {
+      "type": "integer"
+    }
+  }
+}
